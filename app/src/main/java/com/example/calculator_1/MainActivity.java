@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 String content = secondnumber;
                 if (content.startsWith("(-") && content.endsWith(")")) {
                     content = content.substring(2, content.length() -1);
-                } else if (content.startsWith("(-")) {
+                } else if (content.startsWith("(-")&& content.endsWith(")")) {
                     content = content.substring(2);
                 }
                 if(content.contains(".")) return;
